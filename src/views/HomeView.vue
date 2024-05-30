@@ -96,6 +96,7 @@ const sourceMapUpload = async (file: any) => {
   }
   return false
 }
+
 const getSource = async (sourcemap: any, line: number, column: number) => {
   try {
     const consumer = await new sourceMap.SourceMapConsumer(JSON.parse(sourcemap))
